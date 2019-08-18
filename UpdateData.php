@@ -11,14 +11,14 @@
     function CheckClass() {
         var CheckClassName = document.getElementById("Class1").value;
         var checkFullName = document.getElementById("Name1").value;
-        var checkPhone = document.getElementById("Phone1").value;
+        var checkEmail = document.getElementById("Email1").value;
         if (CheckClassName == "GCD0821") {
             return true;
         } else if (checkFullName == "") {
             alert("FullName should have Data");
             return false;
-        } else if (checkPhone == "") {
-            alert("Phone should have Data");
+        } else if (checkEmail == "") {
+            alert("Email should have Data");
             return false;
         } else {
             alert("ClassName should equal GCD0821");
@@ -37,7 +37,7 @@
             <li>Full Name:</li>
             <li><input type="text" name="fname" id="Name1" /></li>
             <li>Phone:</li>
-            <li><input type="text" name="phone" id="Phone1" /></li>
+            <li><input type="text" name="email" id="Email1" /></li>
             <li>Class:</li>
             <li><input type="text" name="classname" id="Class1" /></li>
             <li><input type="submit" onclick="CheckClass()" /></li>
@@ -68,7 +68,7 @@
 
         $db = parse_url(getenv("DATABASE_URL"));
         $pdo = new PDO("pgsql:" . sprintf(
-            "host=ec2-54-235-167-210.compute-1.amazonaws.com;
+             "host=ec2-54-235-167-210.compute-1.amazonaws.com;
 	  port=5432;
       user=mykyomtigjilmn;
       password=d112d6d9924157dde67191b6bb9b7e9dc5da2dbf8f442700a06d9176f7633996;
@@ -94,7 +94,7 @@
 
     // return the number of row affected
     //return $stmt->rowCount();
-    $sql = "UPDATE student SET fname = '$_POST[fname]', phone = '$_POST[phone]', classname = '$_POST[classname]'
+    $sql = "UPDATE student SET fname = '$_POST[fname]', email = '$_POST[email]', classname = '$_POST[classname]'
         WHERE stuid = '$_POST[stuid]'";
     $stmt = $pdo->prepare($sql);
     if ($stmt->execute() == TRUE) {

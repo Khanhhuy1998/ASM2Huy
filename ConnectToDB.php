@@ -48,7 +48,7 @@
   //         echo "    ";
   //         echo $row['fname'];
   //         echo "    ";
-  //         echo $row['phone'];
+  //         echo $row['email'];
   //         echo "    ";
   //         echo $row['classname'];
   //         echo "<br/>";
@@ -71,7 +71,7 @@
           <tr class="odd gradeX">
             <td><?php echo $value['stuid']; ?></td>
             <td><?php echo $value['fname']; ?></td>
-            <td><?php echo $value['phone']; ?></td>
+            <td><?php echo $value['email']; ?></td>
             <td><?php echo $value['classname']; ?></td>
           </tr>
         <?php endforeach; ?>
