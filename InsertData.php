@@ -5,7 +5,7 @@
         var CheckClassName = document.getElementById("Class1").value;
         var checkFullName = document.getElementById("Name1").value;
         var checkEmail = document.getElementById("Email1").value;
-        if (CheckClassName == "GCD0818") {
+        if (CheckClassName == "GCD0821") {
             return true;
         } else if (checkFullName == "") {
             alert("FullName should have Data");
@@ -14,7 +14,7 @@
             alert("Email should have Data");
             return false;
         } else {
-            alert("ClassName should equal GCD0818");
+            alert("ClassName should equal GCD0821");
             return false;
         }
     }
@@ -67,7 +67,11 @@
 
         $db = parse_url(getenv("DATABASE_URL"));
         $pdo = new PDO("pgsql:" . sprintf(
-            "host=ec2-107-20-230-70.compute-1.amazonaws.com;port=5432;user=eirmniiakxyqoe;password=3e07e3615308dc1f376f5cd4effa6c325e0288742205be8c3e6e0978ce59482b;dbname=d6r6sqblr6dakr",
+         "host=ec2-54-235-167-210.compute-1.amazonaws.com;
+	  port=5432;
+      user=mykyomtigjilmn;
+      password=d112d6d9924157dde67191b6bb9b7e9dc5da2dbf8f442700a06d9176f7633996;
+      dbname=d6ov8csheb765b",
             $db["host"],
             $db["port"],
             $db["user"],
