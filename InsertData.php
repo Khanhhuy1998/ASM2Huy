@@ -4,14 +4,14 @@
     function CheckClass() {
         var CheckClassName = document.getElementById("Class1").value;
         var checkFullName = document.getElementById("Name1").value;
-        var checkEmail = document.getElementById("Email1").value;
+        var checkPhone = document.getElementById("Phone1").value;
         if (CheckClassName == "GCD0821") {
             return true;
         } else if (checkFullName == "") {
             alert("FullName should have Data");
             return false;
-        } else if (checkEmail == "") {
-            alert("Email should have Data");
+        } else if (checkPhone == "") {
+            alert("Phone should have Data");
             return false;
         } else {
             alert("ClassName should equal GCD0821");
@@ -42,8 +42,8 @@
             <li><input type="text" name="stuid" /></li>
             <li>Full Name:</li>
             <li><input type="text" name="fname" id="Name1" /></li>
-            <li>Email:</li>
-            <li><input type="text" name="email" id="Email1" /></li>
+            <li>Phone:</li>
+            <li><input type="text" name="Phone" id="Phone1" /></li>
             <li>Class:</li>
             <li><input type="text" name="classname" id="Class1" /></li>
             <li><input type="submit" name="Submit" onclick="CheckClass()" /></li>
@@ -85,8 +85,8 @@
     }
 
     
-    $sql = "INSERT INTO student(stuid, fname, email, classname)"
-        . " VALUES('$_POST[stuid]','$_POST[fname]','$_POST[email]','$_POST[classname]')";
+    $sql = "INSERT INTO student(stuid, fname, phone, classname)"
+        . " VALUES('$_POST[stuid]','$_POST[fname]','$_POST[phone]','$_POST[classname]')";
     $stmt = $pdo->prepare($sql);
     
     if (is_null($_POST[stuid])) {
