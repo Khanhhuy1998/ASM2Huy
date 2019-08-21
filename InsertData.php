@@ -86,7 +86,7 @@
 
     
     $sql = "INSERT INTO student(stuid, fname, email, classname)"
-        . " VALUES('$_POST[stuid]','$_POST[name]','$_POST[email]','$_POST[classname]')";
+        . " VALUES('$_POST[stuid]','$_POST[fname]','$_POST[email]','$_POST[classname]')";
     $stmt = $pdo->prepare($sql);
     
     if (is_null($_POST[stuid])) {
