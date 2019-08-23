@@ -60,10 +60,10 @@
     <table class="table table-bordered table-striped">
       <thead>
         <tr>
-          <th>Student ID</th>
+          <th>Product ID</th>
           <th>Full Name</th>
-          <th>Phone</th>
-          <th>classname</th>
+          <th>Price</th>
+          <th>Supplier</th>
         </tr>
       </thead>
       <tbody>
