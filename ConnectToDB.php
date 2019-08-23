@@ -42,7 +42,7 @@
   $stmt->setFetchMode(PDO::FETCH_ASSOC);
   $stmt->execute();
   $resultSet = $stmt->fetchAll();
-  echo '<p>Students information:</p>';
+  echo '<p>Product information:</p>';
   // foreach ($resultSet as $row) {
   // 	echo $row['stuid'];
   //         echo "    ";
