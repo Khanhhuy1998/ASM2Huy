@@ -38,13 +38,13 @@
     <h2>Enter data into student table</h2>
     <ul>
         <form name="InsertData" action="InsertData.php" method="POST">
-            <li>Student ID:</li>
+            <li>Product ID:</li>
             <li><input type="text" name="stuid" /></li>
             <li>Full Name:</li>
             <li><input type="text" name="fname" id="Name1" /></li>
-            <li>Phone:</li>
+            <li>Price:</li>
             <li><input type="text" name="email" id="Email1" /></li>
-            <li>Class:</li>
+            <li>Supplier:</li>
             <li><input type="text" name="classname" id="Class1" /></li>
             <li><input type="submit" name="Submit" onclick="CheckClass()" /></li>
         </form>
