@@ -21,7 +21,7 @@
     <h1>Delete from database</h1>
     <ul>
         <form name="DeleteData" action="DeleteData.php" method="POST">
-            <li>Student ID:</li>
+            <li>Product ID:</li>
             <li><input type="text" name="stuid" id="take" /></li>
             <li><input type="submit" /></li>
         </form>
